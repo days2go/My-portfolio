@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col items-center p-6 bg-gray-100 relative">
+
+  <!-- Container -->
+  <div class="max-w-6xl w-full bg-white rounded-3xl p-8 md:p-12 shadow-xl relative select-none" style="min-height: 100vh;">
+
+    <!-- Header Nav -->
+    <header class="flex flex-wrap items-center justify-between mb-12">
+      <a href="#" class="flex items-center space-x-1 font-bold text-xl text-gray-900">
+        <div class="rounded-full border-2 border-yellow-400 w-8 h-8 flex justify-center items-center text-yellow-400 font-extrabold text-2xl">L</div>
+        <span class="tracking-wide">Lavish</span>
+      </a>
+
+      <nav class="hidden md:flex space-x-8 font-semibold text-gray-700">
+        <a href="#" class="hover:text-yellow-400 transition-colors duration-200">Home</a>
+        <a href="#" class="hover:text-yellow-400 transition-colors duration-200">Blog</a>
+        <a href="about.html" class="hover:text-yellow-400 transition-colors duration-200">About</a>
+        <a href="#" class="hover:text-yellow-400 transition-colors duration-200">Contacts</a>
+      </nav>
+
+      <div class="flex items-center space-x-3">
+        <div class="hidden md:flex space-x-4 text-gray-500 text-sm">
+          <a href="https://www.youtube.com/@days2go" aria-label="Follow on YouTube" title="YouTube" class="hover:text-yellow-400"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+    <path d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.39 31.39 0 0 0 .5 12a31.39 31.39 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.495 20.5 12 20.5 12 20.5s7.505 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.39 31.39 0 0 0 23.5 12a31.39 31.39 0 0 0-.002-5.814zM9.75 15.5v-7l6 3.5-6 3.5z"/>
+        </svg>
+         </a>
+          <a href="https://t.me/days2go" aria-label="Follow on Telegram" title="Telegram" class="hover:text-yellow-400"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M9.999 15.18 9.88 20c.518 0 .743-.222 1.018-.489l2.44-2.323 5.06 3.705c.927.51 1.588.241 1.817-.86l3.293-15.47c.334-1.33-.482-1.85-1.347-1.525L1.51 9.79c-1.305.523-1.287 1.246-.222 1.58l5.89 1.84 13.65-8.606c.643-.39 1.23-.174.748.25L9.999 15.18z"/>
+         </svg>
+         </a>
+          <a href="https://www.instagram.com/_days2go/" aria-label="Follow on Instagram" title="Instagram" class="hover:text-yellow-400"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5a4.25 4.25 0 004.25 4.25h8.5a4.25 4.25 0 004.25-4.25v-8.5a4.25 4.25 0 00-4.25-4.25h-8.5zm9.75 1a1 1 0 110 2 1 1 0 010-2zm-5.75 1.25a4.75 4.75 0 110 9.5 4.75 4.75 0 010-9.5zm0 1.5a3.25 3.25 0 100 6.5 3.25 3.25 0 000-6.5z"/></svg></a>
+          <a href="https://www.linkedin.com/in/days2go" aria-label="Follow on LinkedIn" title="LinkedIn" class="hover:text-yellow-400"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.025-3.037-1.848-3.037-1.848 0-2.132 1.445-2.132 2.94v5.666H9.36V9h3.414v1.561h.047c.476-.9 1.637-1.848 3.37-1.848 3.604 0 4.268 2.371 4.268 5.455v6.284zM5.337 7.433a2.07 2.07 0 01-2.068-2.068 2.068 2.068 0 114.135 0 2.07 2.07 0 01-2.067 2.068zM6.811 20.452H3.864V9h2.947v11.452z"/></svg></a>
+        </div>
+        <a href="https://t.me/days2go" target="_blank" aria-label="Contact Me" title="Contact Me">
+        <button class="btn-black rounded-md py-2 px-4 text-sm font-semibold whitespace-nowrap">
+        Contact Me
+        </button>
+        </a>
+
+
+        <button aria-label="Toggle menu" title="Toggle menu" class="md:hidden focus:outline-none" onclick="document.querySelector('nav').classList.toggle('hidden')">
+          <svg class="w-6 h-6 fill-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Top Main Section -->
+    <section class="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-16">
+      <div class="md:w-1/2 space-y-4">
+        <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-900">
+          Hi! I’m <span class="text-black">Lavish Jangid</span> -<br />
+          <span class="text-yellow-400">UI/UX Designer</span>
+        </h1>
+        <p class="text-gray-700 leading-relaxed text-sm md:text-base max-w-xl">
+          Fronted Designer and Creative editor worker in design field for 3 years so far, fresher in UI/UX.(-GIT Jaipur- IT Branch 1st Year Student)
+        </p>
+        <dl class="text-sm text-gray-600 space-y-2">
+          <div><dt class="inline font-bold">Email:</dt> <dd class="inline">jangidlavish14@gmail.com</dd></div>
+          <div><dt class="inline font-bold">Github:</dt> <dd class="inline"><a href="https://github.com/days2go" target="_blank" rel="noopener noreferrer" class="text-yellow-400 hover:underline">days2go</a></dd></div>
+        </dl>
+        <div class="flex space-x-4 mt-6">
+          <a href="cv.pdf" target="_blank">
+          <button class="btn-yellow rounded-md py-2 px-5">
+            Download CV
+          </button>
+          </a>
+          <a href="https://www.linkedin.com/in/lavish-jangid-896921366/" target="_blank">
+          <button class="btn-black rounded-md py-2 px-5">Hire Me Now</button>
+          </a>
+
+        </div>
+
+        <!-- Card Features -->
+        <div class="flex flex-wrap gap-4 mt-10">
+          <div tabindex="0" aria-describedby="ux-description" class="card-shadow bg-white rounded-md flex items-center space-x-6 px-6 py-4 w-[11.5rem] cursor-default focus:outline-yellow-400 focus:outline-2 focus:outline-offset-2">
+            <svg class="text-yellow-400 w-7 h-7 flex-none" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v4a1 1 0 001 1h3m10 0h3a1 1 0 001-1v-4a4 4 0 10-8 0v4m1 5h.01"/></svg>
+            <div>
+              <h3 class="text-sm font-bold tracking-wide text-gray-900">UI/UX Designer</h3>
+              <p id="ux-description" class="text-xs text-gray-500">Creative websites for you</p>
+            </div>
+          </div>
+          <div tabindex="0" aria-describedby="photographer-description" class="card-shadow bg-white rounded-md flex items-center space-x-6 px-6 py-4 w-[11.5rem] cursor-default focus:outline-yellow-400 focus:outline-2 focus:outline-offset-2">
+            <svg class="text-yellow-400 w-7 h-7 flex-none" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 15a4 4 0 104 4m8-10v12M20 8a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <div>
+              <h3 class="text-sm font-bold tracking-wide text-gray-900">Editor</h3>
+              <p id="photographer-description" class="text-xs text-gray-500">Edit photo & videos</p>
+            </div>
+          </div>
+          <div tabindex="0" aria-describedby="freelancer-description" class="card-shadow bg-white rounded-md flex items-center space-x-6 px-6 py-4 w-[11.5rem] cursor-default focus:outline-yellow-400 focus:outline-2 focus:outline-offset-2">
+            <svg class="text-yellow-400 w-7 h-7 flex-none" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 12l9-5-9-5-9 5 9 5zm0 7v-6"/></svg>
+            <div>
+              <h3 class="text-sm font-bold tracking-wide text-gray-900">Freelancer</h3>
+              <p id="freelancer-description" class="text-xs text-gray-500">You can hire me now.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative md:w-1/2 flex justify-center">
+        <div class="blob-yellow-1 absolute w-[320px] h-[350px] top-0 right-0 -z-10 rounded-full"></div>
+        <img src="profile5.png" alt="Young woman wearing yellow sweater and round orange sunglasses, smiling and playfully posing" class="rounded-3xl object-cover max-w-[320px] max-h-[350px] relative z-10" onerror="this.style.display='none',width = '180px';" />
+      </div>
+    </section>
+
+    <!-- Middle Section: Hi There + Text -->
+    <section class="mt-16 flex flex-col md:flex-row items-center gap-10 md:gap-20">
+      <div class="relative md:w-1/2 flex justify-center">
+        <div class="blob-yellow-2 absolute w-[380px] h-[330px] rounded-full bottom-0 left-0 -z-10"></div>
+        <img src="profile4.jpg" alt="Smiling woman wearing casual clothes sitting relaxed on a modern wooden chair, showing a peace sign with right hand" class="rounded-3xl object-cover max-w-[500px] max-h-[400px] relative z-10" onerror="this.style.display='none';" />
+        <span class="absolute top-4 left-4 text-4xl font-extrabold text-black select-none pointer-events-none" style="font-family: 'Comic Sans MS', cursive, sans-serif;"></span>
+      </div>
+
+      <div class="md:w-1/2 space-y-3">
+        <h2 class="text-lg md:text-xl font-extrabold text-gray-900">Need Creative Design?<br />I can Help You!</h2>
+        <p class="text-gray-700 text-sm md:text-base leading-relaxed max-w-lg">
+          web Designer and Creative Editor working in design field for 3 years so far, fresher in UI/UX, editing and digital designs. These are the words we live by in everything we do. Every video we edit, every web page we build, and every interaction we create must not only look beautiful, beautifully, too.
+        </p>
+        <p class="font-semibold text-sm md:text-base text-gray-900">You Can Follow Me Also Here:</p>
+        <div class="flex space-x-3 text-white text-xs md:text-sm">
+          <a href="#" aria-label="Follow on Behance" class="bg-blue-700 rounded-md px-3 py-1 inline-flex items-center justify-center hover:bg-blue-800 transition-colors">
+            Telegram
+          </a>
+          <a href="#" aria-label="Follow on Dribbble" class="bg-pink-500 rounded-md px-3 py-1 inline-flex items-center justify-center hover:bg-pink-600 transition-colors">
+            YouTube
+          </a>
+          <a href="#" aria-label="Follow on Instagram" class="bg-pink-700 rounded-md px-3 py-1 inline-flex items-center justify-center hover:bg-pink-800 transition-colors">
+            Instagram
+          </a>
+          <a href="#" aria-label="Follow on Medium" class="bg-yellow-400 text-gray-900 rounded-md px-3 py-1 inline-flex items-center justify-center hover:bg-yellow-500 transition-colors">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Section -->
+    <section class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+      <!-- Left - Skill Info -->
+      <div class="max-w-md">
+        <h3 class="text-lg md:text-xl font-extrabold text-black tracking-tight mb-4">What My Design Skills Included</h3>
+        <p class="text-gray-700 text-sm md:text-base leading-relaxed mb-8 max-w-md">
+          These are the words we live by in everything we do. Every video we edit, every design we build, and every interaction we create must not only look beautiful.
+        </p>
+
+        <div>
+          <label for="skill-photoshop" class="block font-semibold text-gray-900 text-sm mb-1">Video Editing</label>
+          <div class="skill-bar-bg">
+            <div id="skill-photoshop" class="skill-bar-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div>
+          <label for="skill-illustrator" class="block font-semibold text-gray-900 text-sm mb-1">Web Disigning</label>
+          <div class="skill-bar-bg">
+            <div id="skill-illustrator" class="skill-bar-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div>
+          <label for="skill-sketch" class="block font-semibold text-gray-900 text-sm mb-1">Learning</label>
+          <div class="skill-bar-bg">
+            <div id="skill-sketch" class="skill-bar-fill" style="width: 70%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right - Four Card Design Skills -->
+      <div class="grid grid-cols-2 gap-6 max-w-lg">
+        <div tabindex="0" aria-label="UI/UX Design" class="bg-white card-shadow rounded-xl p-6 flex flex-col items-center justify-center cursor-default focus:outline-yellow-400 focus:outline-2 focus:outline-offset-2">
+          <svg class="w-10 h-10 text-black mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M11 11H4a2 2 0 0 1-2-2V4m9 7h6a2 2 0 0 1 2 2v4m0-9v14a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2v-6"/></svg>
+          <h4 class="text-black font-bold">UI/UX Design</h4>
+        </div>
+        <div tabindex="0" aria-label="Graphic Design" class="bg-white card-shadow rounded-xl p-6 flex flex-col items-center justify-center cursor-default focus:outline-yellow-400 focus:outline-2 focus:outline-offset-2">
+          <svg class="w-10 h-10 text-black mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <h4 class="text-black font-bold">Graphic Design</h4>
+        </div>
+        <div tabindex="0" aria-label="Motion Design" class="bg-white card-shadow rounded-xl p-6 flex flex-col items-center justify-center cursor-default focus:outline-yellow-400 focus:outline-2 focus:outline-offset-2">
+          <svg class="w-10 h-10 text-black mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 10V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4v-4l4 4V10h-4z"/></svg>
+          <h4 class="text-black font-bold">Video Editing</h4>
+        </div>
+        <div tabindex="0" aria-label="Photo Retouch" class="bg-white card-shadow rounded-xl p-6 flex flex-col items-center justify-center cursor-default focus:outline-yellow-400 focus:outline-2 focus:outline-offset-2">
+          <svg class="w-10 h-10 text-black mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 12H9m12-6v12a2 2 0 0 1-2 2h-3l-4 4v-4H5a2 2 0 0 1-2-2V6c0-1.105.895-2 2-2h12a2 2 0 0 1 2 2z"/></svg>
+          <h4 class="text-black font-bold">Freelancing</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Black Decorative Shapes on Sides -->
+    <div aria-hidden="true">
+      <div class="blob-black-1 absolute top-24 left-0 w-[280px] h-[320px] rounded-full -z-20"></div>
+      <div class="blob-black-2 absolute bottom-24 right-0 w-[180px] h-[180px] rounded-full -z-20"></div>
+    </div>
+  </div>
+
+</body>
+</html>

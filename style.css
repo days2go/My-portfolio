@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: hsl(64, 100%, 79%);
+    }
+    /* Custom shapes for image backgrounds */
+    .blob-yellow-1 {
+      clip-path: polygon(
+        50% 0%, 75% 10%, 100% 25%, 100% 75%, 75% 100%, 50% 90%, 25% 100%, 0% 75%, 0% 25%, 25% 10%
+      );
+      background-color: #fcba03;
+    }
+    .blob-yellow-2 {
+      clip-path: polygon(
+        60% 5%, 90% 15%, 95% 50%, 80% 80%, 50% 90%, 25% 80%, 10% 50%, 15% 15%
+      );
+      background-color: #fcba03;
+    }
+    .blob-black-1 {
+      clip-path: polygon(
+        20% 0%, 60% 5%, 80% 30%, 100% 45%, 80% 80%, 60% 100%, 10% 90%, 0% 65%, 5% 20%
+      );
+      background-color: #0f172a;
+      opacity: 0.95;
+    }
+    .blob-black-2 {
+      clip-path: polygon(
+        5% 10%, 40% 0%, 70% 15%, 75% 55%, 50% 85%, 10% 85%, 0 55%
+      );
+      background-color: #0f172a;
+      opacity: 0.95;
+    }
+
+    /* Scrollbar style */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #fdba03;
+      border-radius: 4px;
+    }
+
+    /* Hide number input spinners */
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Buttons */
+    .btn-yellow {
+      background-color: #fcba03;
+      color: #0f172a;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+    .btn-yellow:hover {
+      background-color: #efb70c;
+      color: #111827;
+    }
+
+    .btn-black {
+      background-color: #111827;
+      color: #fcd34d;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+    .btn-black:hover {
+      background-color: #1f2937;
+      color: #fdba03;
+    }
+
+    /* Card drop shadows */
+    .card-shadow {
+      box-shadow:
+        0 10px 15px -3px rgba(252, 186, 3, 0.25),
+        0 4px 6px -2px rgba(252, 186, 3, 0.15);
+    }
+
+    /* Skill bar animations */
+    .skill-bar-bg {
+      background: #e5e7eb;
+      border-radius: 0.375rem; /* rounded-md */
+      height: 0.5rem;
+      width: 12rem;
+      overflow: hidden;
+      margin-top: 0.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .skill-bar-fill {
+      height: 100%;
+      border-radius: 0.375rem;
+      transition: width 1s ease-out;
+      background: linear-gradient(90deg, #fcd34d 0%, #fbbf24 100%);
+    }
